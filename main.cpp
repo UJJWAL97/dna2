@@ -171,7 +171,7 @@ int scorer(string& str1,string& str2){
 
 
         }
-    printer(m+1,n+1,arr);
+
 
     string x="";
     string y="";
@@ -337,8 +337,10 @@ int scorer(string& str1,string& str2){
 
 
 int main() {
-    string seq1 = "TGGCGGAACT";
-    string seq2 = "TGGTGGTACT";
+    string seq1;
+    string seq2;
+    getline(cin, seq1);
+    getline(cin, seq2);
     scorer(seq1,seq2);
     return 0;
 }
